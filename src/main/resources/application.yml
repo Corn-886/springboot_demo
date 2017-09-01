@@ -1,0 +1,48 @@
+
+server:
+    port: 9860
+
+
+
+spring:
+  profiles:
+    active: development
+
+  resources:
+    chain:
+      cache: false
+
+  cache:
+    type: NONE
+
+
+
+---
+
+##########################  开发环境配置  #####################################
+
+spring:
+  profiles: development
+
+
+
+
+---
+
+##########################  生产环境配置  #####################################
+
+spring:
+  profiles: production
+
+
+
+
+
+---
+
+##########################  测试环境配置  #####################################
+
+
+
+spring:
+  profiles: test
